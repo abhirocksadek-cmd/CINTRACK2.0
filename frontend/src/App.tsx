@@ -61,8 +61,9 @@ export default function App() {
                   onClick={save}
                   disabled={saving}
                   aria-busy={saving}
+                  aria-label="Save this entry to my history"
                 >
-                  {saving ? "Saving…" : "Save this entry to my history"}
+                  {saving ? "Logging…" : "Log Data"}
                 </button>
               </div>
             </>
