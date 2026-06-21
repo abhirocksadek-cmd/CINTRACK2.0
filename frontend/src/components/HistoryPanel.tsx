@@ -81,8 +81,9 @@ export function HistoryPanel({ entries }: Props) {
                   cx={getX(idx)}
                   cy={getY(idx === values.length - 1 ? latest : val)}
                   r="4"
-                  title={`Entry ${idx + 1}: ${formatTonnes(val)} t`}
-                />
+                >
+                  <title>{`Entry ${idx + 1}: ${formatTonnes(val)} t`}</title>
+                </circle>
               ))}
             </g>
           </svg>
